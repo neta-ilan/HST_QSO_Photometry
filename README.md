@@ -8,12 +8,26 @@ This repository contains a code for Apparture Photometry of data taken by the Wi
 * `astropy`, `numpy`, `matplotlib` packages
 * A basic understanding of FITS (Flexible Image Transport System) files and their structure
 
-## Repository Scripts Overview
+## Scripts Functions Overview
 
 This repository contains a few scripts:
-* Step 1 is Angular alignment. As a preperatory stage before stacking the images.
-* Step 2 is Stacking two images stored in two FITS files. 
-* Step 3 is Aperture Photometry. 
+
+1. Angular alignment. As a preperatory stage before stacking the images.
+* align_two_fits(path1, path2, plot=False):
+    this func aligns the image in the fits file in path2 to match the fits file in path1, in terms of angular alignment.
+    the fits files assumed struceture: 2 hdu's, the first containing nothing (in the data part), and the second containing the image data. 
+    Both have important headers that we want to keep.
+    
+2. Stacking two images stored in two FITS files. 
+* stack(path1, path2, draw=False, draw_QSO=None):
+    this func stacks 2 fits files, the draw option will plot the new image, 
+    the draw_QSO option takes a tuple of RA and DEC in deg and plots the QSO's close area only.
+    each original image has two hdus, one containing a header and the image data, and the other containing only a header with information.
+    the new stacked file will contain all of these headers.
+    notice- the draw_QSO feature uses WCS (World Coordinate System) taken from the header in order to match the given coordinates and
+    their matching pixels.
+
+3. Aperture Photometry. 
 
 ## Observational data
 
