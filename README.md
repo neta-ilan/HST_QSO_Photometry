@@ -38,24 +38,24 @@ This repository contains a few scripts:
         their matching pixels.
 
 3. Aperture Photometry. 
-* photometry3(hdulist, centerX, centerY, small, medium, large):
-    this func calculates counts->flux->mag[AB] and the matching error.
-    it assumes that the "small" aperture is 3 pixels (radius) and
-    therefore the enclosed flux percentage is: 0.838.
-    notice- the enclosed flux precentage can be taken from the "WFPC3 Instrument Handbook"
-    (http://www.stsci.edu/hst/instrumentation/wfc3), chapter 7, Table 7.6: WFC3/IR PSF Encircled Energy Fraction vs. Aperture Radius
-    (arcsec).
-* photometry5(hdulist, centerX, centerY, small, medium, large):
-    same as the previous function, but this func assumes that the "small" aperture is 5 pixels and
-    therefore the enclosed flux percentage is: 0.88125'''
-* plot_circles(hdulist, centerX, centerY, small, medium, large):
-    this func plots the image in z-scale with three aperture circles.
-    this feature helps you to see what objects you are including in your measurment of the background.
-* plot_circles_not_z_scale(hdulist, centerX, centerY, small, medium, large):
-    this func plots only the 0.05 highest valued pixels with three aperture circles
-    this is good for identifying the center of the PSF of the QSO.
-   
+   * photometry3(hdulist, centerX, centerY, small, medium, large):
+       this func calculates counts->flux->mag[AB] and the matching error.
+       it assumes that the "small" aperture is 3 pixels (radius) and
+       therefore the enclosed flux percentage is: 0.838.
+       notice- the enclosed flux precentage can be taken from the "WFPC3 Instrument Handbook"
+       (http://www.stsci.edu/hst/instrumentation/wfc3), chapter 7, Table 7.6: WFC3/IR PSF Encircled Energy Fraction vs. Aperture Radius
+       (arcsec).
+   * photometry5(hdulist, centerX, centerY, small, medium, large):
+       same as the previous function, but this func assumes that the "small" aperture is 5 pixels and
+       therefore the enclosed flux percentage is: 0.88125'''
+   * plot_circles(hdulist, centerX, centerY, small, medium, large):
+       this func plots the image in z-scale with three aperture circles.
+       this feature helps you to see what objects you are including in your measurment of the background.
+   * plot_circles_not_z_scale(hdulist, centerX, centerY, small, medium, large):
+       this func plots only the 0.05 highest valued pixels with three aperture circles
+       this is good for identifying the center of the PSF of the QSO.
 
-For any questions regarding this repository, feel free to write me via mail: neta.ilan@tau.ac.il
+
+For any questions regarding this repository, feel free to contact me via mail: neta.ilan@mail.tau.ac.il
 
 
