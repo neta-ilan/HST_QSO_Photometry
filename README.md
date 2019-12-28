@@ -18,7 +18,7 @@ This code was used to analyze data obtained with HST WFC3 NIR F140W (Hubble Spac
 The principal investigator of the proposel is Trakhtenbrot Benny (Tel Aviv University, Israel).
 In this project, the photometric measurments were done on a sample of 6 Quasi-stellar objects (QSO), in high Redshifts.
 
-## Scripts Functions Overview
+## Functions Overview
 
 This repository contains a few scripts:
 
