@@ -9,7 +9,7 @@ This repository contains a code for Apparture Photometry of data taken by the Wi
 * A basic understanding of FITS (Flexible Image Transport System) files and their structure
 * A basic undestanding of the Aperture Photomentry method
 
-You can find a good explanation for both FITS files structure and Aperture Photometry, in "A Beginner's Guide to Working with Astronomical Data" by Markus Possel, chapter 10.1 "FITS files and python".
+You can find a good explanation for both FITS files structure and Aperture Photometry, in "A Beginner's Guide to Working with Astronomical Data" by Markus Possel, chapter 10.1 "FITS files and python". (https://arxiv.org/abs/1905.13189)
 
 ## Observational data
 
@@ -17,6 +17,7 @@ This code was used to analyze data obtained with HST WFC3 NIR F140W (Hubble Spac
 
 The principal investigator of the proposel is Trakhtenbrot Benny (Tel Aviv University, Israel).
 In this project, the photometric measurments were done on a sample of 6 Quasi-stellar objects (QSO), in high Redshifts.
+The research proposel: https://archive.stsci.edu/proposal_search.php?id=15118&mission=hst
 
 ## Functions Overview
 
